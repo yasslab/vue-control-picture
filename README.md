@@ -8,10 +8,11 @@ Usage
 
 ```vue
 <template>
-  <h1>↵</h1>
-  <p>{{message | controlPicture }}</p>
-  <h1>♡<h1>
-  <p>{{message | controlPicture "♡" }}</p>
+  <h1>Vue Control Picture</h1>
+  <h2>Before</h2>
+  <pre>{{message}}</pre>
+  <h2>After<h2>
+  <pre>{{message | controlPicture }}</pre>
 </template>
 <script>
 var Vue = require('vue');
@@ -21,7 +22,7 @@ Vue.use(VueControlPicture);
 
 module.exports = {
   data: function () {
-    message: "hello\nこんにちは\n你好"
+    message: "hello, world!\nこんにちは世界!\n你好世界!"
   }
 }
 </script>
