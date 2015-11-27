@@ -22,7 +22,7 @@ Vue.use(VueControlPicture);
 
 module.exports = {
   data: function () {
-    message: "hello, world!\nこんにちは世界!\n你好世界!"
+    return {message: "hello, world!\nこんにちは世界!\n你好世界!"};
   }
 }
 </script>
