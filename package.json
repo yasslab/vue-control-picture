@@ -1,14 +1,14 @@
 {
-  "name": "vue-enter-key",
-  "version": "1.0.2",
-  "description": "represent \\n as enter key glyph.",
+  "name": "vue-control-picture",
+  "version": "1.0.0",
+  "description": "represent control characters as unicode control pictures glyph.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yasslab/vue-enter-key"
+    "url": "https://github.com/yasslab/vue-control-picture"
   },
   "keywords": [
     "vue",
@@ -17,9 +17,9 @@
   "author": "YassLab",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yasslab/vue-enter-key/issues"
+    "url": "https://github.com/yasslab/vue-control-picture/issues"
   },
-  "homepage": "https://github.com/yasslab/vue-enter-key",
+  "homepage": "https://github.com/yasslab/vue-control-picture",
   "devDependencies": {
     "mocha": "^2.3.3"
   },

@@ -1,7 +1,7 @@
-vue-enter-key [![Build Status](https://travis-ci.org/yasslab/vue-enter-key.svg?branch=master)](https://travis-ci.org/yasslab/vue-enter-key)
+vue-control-picture [![Build Status](https://travis-ci.org/yasslab/vue-control-picture.svg?branch=master)](https://travis-ci.org/yasslab/vue-control-picture)
 =============
 
-[![NPM](https://nodei.co/npm/vue-enter-key.png)](https://www.npmjs.com/package/vue-enter-key)
+[![NPM](https://nodei.co/npm/vue-control-picture.png)](https://www.npmjs.com/package/vue-control-picture)
 
 Usage
 -----
@@ -9,15 +9,15 @@ Usage
 ```vue
 <template>
   <h1>↵</h1>
-  <p>{{message | enterKey }}</p>
+  <p>{{message | controlPicture }}</p>
   <h1>♡<h1>
-  <p>{{message | enterKey "♡" }}</p>
+  <p>{{message | controlPicture "♡" }}</p>
 </template>
 <script>
 var Vue = require('vue');
-var VueEnterKey = require('vue-enter-key');
+var VueControlPicture = require('vue-control-picture');
 
-Vue.use(VueEnterKey);
+Vue.use(VueControlPicture);
 
 module.exports = {
   data: function () {

@@ -1,8 +1,10 @@
 'use strict';
 
 exports.install = function (Vue, opts) {
-  Vue.filter('enterKey', function (value, char) {
-    char = char || '↵';
-    return value.replace(/\n/g, char + '\n');
+  opts = opts || {}
+  var chars = opts.chars || {enter: '↵'};
+
+  Vue.filter('controlPicture', function (value) {
+    return value.replace(/\n/g, chars.enter + '\n');
   });
 }
