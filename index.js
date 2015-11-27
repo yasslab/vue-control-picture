@@ -2,9 +2,11 @@
 
 exports.install = function (Vue, opts) {
   opts = opts || {}
-  var chars = opts.chars || {enter: '↵'};
+  var chars = opts.chars || {enter: '↵', space: '␣'};
 
   Vue.filter('controlPicture', function (value) {
-    return value.replace(/\n/g, chars.enter + '\n');
+    var replaced = value.replace(/\n/g, chars.enter + '\n');
+    replaced = replaced.replace(/ /g, chars.space);
+    return replaced;
   });
 }
